@@ -1,7 +1,7 @@
 // app.js
 let characterLevel = 1;
 let characterXP = 0;
-let xpToNextLevel = 100;
+let xpToNextLevel = 10;
 
 let stats = {
     force: 0,
