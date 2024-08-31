@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang="fr"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Mon RPG de Progrès</title>    <link rel="stylesheet" href="styles.css"></head><body>    <div class="app">        <h1>Mon RPG de Progrès</h1>        <div id="character">            <h2>Personnage</h2>            <p>Niveau : <span id="level">1</span></p>            <p>XP : <span id="xp">0</span>/100</p>        </div>        <div id="goals">            <h2>Mes Objectifs</h2>            <ul id="goal-list"></ul>            <input type="text" id="new-goal" placeholder="Nouvel objectif">            <button id="add-goal">Ajouter</button>        </div>    </div>    <script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon RPG de Progrès</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mon RPG de Progrès</h1>
+        </header>
+        
+        <section id="character-section">
+            <h2>Personnage</h2>
+            <img id="character-image" src="images/character-level-1.png" alt="Personnage">
+            <p id="character-level">Niveau : 1</p>
+        </section>
+        
+        <section id="categories-section">
+            <h2>Objectifs par Catégorie</h2>
+            <div class="category" id="sport">
+                <h3>Sport (Force)</h3>
+                <p>Objectifs complétés : <span id="sport-goals">0</span>/<span id="sport-total-goals">20</span></p>
+                <progress id="sport-progress" value="0" max="100"></progress>
+            </div>
+            <div class="category" id="etudes">
+                <h3>Études (Intelligence)</h3>
+                <p>Objectifs complétés : <span id="etudes-goals">0</span>/<span id="etudes-total-goals">20</span></p>
+                <progress id="etudes-progress" value="0" max="100"></progress>
+            </div>
+            <!-- Ajouter d'autres catégories ici -->
+        </section>
+        
+        <section id="stats-section">
+            <h2>Statistiques</h2>
+            <p>Force : <span id="force-stat">0</span>/100</p>
+            <p>Intelligence : <span id="intelligence-stat">0</span>/100</p>
+            <!-- Ajouter d'autres attributs ici -->
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
